@@ -1,0 +1,1 @@
+(Get-WmiObject -Class win32_process -ComputerName talon-02 | Where-Object name -Match explorer).getowner().user
