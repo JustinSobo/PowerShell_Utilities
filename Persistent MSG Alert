@@ -1,0 +1,4 @@
+$a = new-object -comobject wscript.shell
+ while(1) {
+ $b = $a.popup(“Hello Poppet..“,0,”Poppet”,1)
+ }
