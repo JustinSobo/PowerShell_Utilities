@@ -1,0 +1,27 @@
+$webdav_root = "B:\"
+$file_dir = "exports\"
+$file = Get-Date -UFormat 'products-%Y-%m-%d.csv'
+$local_root = "C:\"
+$localfile_dir = "Users\jstevens\Desktop\BC PS Test\"
+$rename = Get-Date -UFormat '%Y-%m-%d.csv'
+
+If (-Not (net use URL /user:USERNAME PASSWORD)) {
+  Write-Output "Connection Unsuccessful..."
+
+  }  Else {
+
+    "Connection Successful..."
+    #cd ${webdav_root}${file_dir}
+    Copy-Item ${webdav_root}${file_dir}${file} -Destination "${local_root}${localfile_dir}"
+    Rename-Item -Path ${local_root}${localfile_dir}${file} -NewName $rename
+
+}
+
+If (-Not (Test-Path ${local_root}${localfile_dir}${rename})) {
+  Write-Output "File was unable to pull..."
+
+  }  Else {
+
+    "File has pulled..."
+
+}
