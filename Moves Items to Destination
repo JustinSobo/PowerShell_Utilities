@@ -1,0 +1,1 @@
+Get-ChildItem -Recurse '*.jpg' | Move-Item -Destination 'Put your destination here...'
