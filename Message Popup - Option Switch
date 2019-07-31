@@ -1,0 +1,16 @@
+$msgBoxInput = [System.Windows.MessageBox]::Show('This is a message.','This is a title','YesNo','Error')
+
+  switch  ($msgBoxInput) {
+
+  'Yes' {
+
+          #DO SOMETHING HERE
+
+  }
+
+  'No' {
+
+          #DO SOMETHING HERE
+
+  }
+  }
