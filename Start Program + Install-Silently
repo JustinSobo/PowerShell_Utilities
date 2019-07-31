@@ -1,0 +1,2 @@
+$username = 'stevensj'
+Start-Process -FilePath C:\Users\$username\Desktop\FFClient-x64-4.0.0.39941.msi /passive
