@@ -1,0 +1,1 @@
+Invoke-Command -ComputerName pc-stevensj -ScriptBlock {C:\Users\stevensj\Desktop/FFClient-x64-4.0.0.39941.msi /passive}
