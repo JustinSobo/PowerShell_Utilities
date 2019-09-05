@@ -1,0 +1,8 @@
+#Lists printer drivers.
+Get-PrinterDriver
+
+#Lists printer driver as a list.
+Get-PrinterDriver | Format-List Name, Path, Manufacturer
+
+#Lists printer driver in a table.
+Get-PrinterDriver | Format-Table Name, Path, Manufacturer
