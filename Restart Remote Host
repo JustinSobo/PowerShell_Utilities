@@ -1,0 +1,1 @@
+Restart-Computer -ComputerName IP/HOST-NAME -Timeout 100
