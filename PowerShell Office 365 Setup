@@ -1,0 +1,8 @@
+	1. Install the 64-bit version of the Microsoft Online Services Sign-in Assistant: Microsoft Online Services Sign-in Assistant for IT Professionals RTW.
+	2. Open an elevated Windows PowerShell command prompt then run the following commands:
+	3. Install-Module MSOnline 
+	4. Connect-MsolService 
+	5. Connect-AzureAD
+	6. $UserCredential = Get-Credential 
+	7. $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection 
+Import-PSSession $Session -DisableNameChecking 
