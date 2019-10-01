@@ -1,0 +1,1 @@
+$serviceList = Get-WmiObject -Class Win32_Service | Group-Object -Property ProcessID -AsString -AsHashTable
