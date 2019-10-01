@@ -1,0 +1,3 @@
+Sorts membership alphabetically and includes group and display names
+
+(Get-ADUser jbray –Properties MemberOf).MemberOf | Get-ADGroup -Properties DisplayName | Select-object name, DisplayName | Sort-Object name -CaseSensitive 
