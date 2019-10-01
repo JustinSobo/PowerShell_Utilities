@@ -1,0 +1,1 @@
+Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery 'Subject:"Your query"' –DeleteContent
