@@ -1,0 +1,21 @@
+# Set time with external time source
+# For use with non-domain servers
+
+# Search ntp.org for correct time
+Write-Host "Searching for time source..."
+Start-Sleep -s 2
+w32tm.exe /config /manualpeerlist:”0.us.pool.ntp.org 1.us.pool.ntp.org 2.us.pool.ntp.org 3.us.pool.ntp.org” /syncfromflags:manual /reliable:YES /update
+Write-Host "Time source located..."
+Start-Sleep -s 2
+
+Write-Host "Time source set to pool.ntp.org..."
+Start-Sleep -s 2
+w32tm.exe /config /update
+Start-Sleep -s 2
+
+Write-Host "Restarting Windows Time..."
+Start-Sleep -s 2
+Restart-Service w32time
+Start-Sleep -s 2
+
+Write-Host "Finished..."
