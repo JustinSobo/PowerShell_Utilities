@@ -1,0 +1,5 @@
+To schedule a PowerShell script to run at a given time or on a recurring basis, just setup a new Scheduled Task in Windows Task Scheduler with the following parameters:
+
+	Program/script	C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+	Add arguments	-file c:\scripts\scriptname.ps1
+	Security options	Run whether user is logged on or not
