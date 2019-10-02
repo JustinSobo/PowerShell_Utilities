@@ -10,9 +10,6 @@ Name: AD-CreateUserNoMailbox.ps1
 Version: 1.0
 Author: The Sysadmin Channel
 Date of last revision: 12/18/2016
- 
-.LINK
-<a class="vglnk" href="https://thesysadminchannel.com/script-create-user-accounts-in-powershell/" rel="nofollow"><span>https</span><span>://</span><span>thesysadminchannel</span><span>.</span><span>com</span><span>/</span><span>script</span><span>-</span><span>create</span><span>-</span><span>user</span><span>-</span><span>accounts</span><span>-</span><span>in</span><span>-</span><span>powershell</span><span>/</span></a> -
 #>
  
  
@@ -46,7 +43,7 @@ $logonname = $firstname.substring(0,$i) + $lastname
 #Setting the employee ID.  Remove the '#' if you want to use the variable
 #$empID = Read-Host "Enter in the Employee ID"
 #Setting the Path for the OU.
-$OU = "OU=Users,OU=Home,DC=ad,DC=thesysadminchannel,DC=com"
+$OU = "DC=MGADM"
 #Setting the variable for the domain.
 $domain = $env:userdnsdomain
 #Setting the variable for the description.
@@ -98,7 +95,7 @@ Write-Host "Domain:         $domain"
  
  
 #Setting minimum password length to 12 characters and adding password complexity.
-$PasswordLength = 12
+$PasswordLength = 8
  
 Do
 {
