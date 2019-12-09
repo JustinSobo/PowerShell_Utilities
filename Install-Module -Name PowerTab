@@ -1,0 +1,3 @@
+# PowerTab offers enhanced tab expansion for PowerShell. The script below will install PowerTab for PowerShell.
+
+Install-Module -Name PowerTab
