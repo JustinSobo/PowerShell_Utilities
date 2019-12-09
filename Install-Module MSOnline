@@ -1,0 +1,3 @@
+# Installs Microsoft Online module.
+
+Install-Module MSOnline
