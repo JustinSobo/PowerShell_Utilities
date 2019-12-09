@@ -1,0 +1,3 @@
+# Retrieves the last result of a Windows update search and installation status.
+
+Get-WULastResults
