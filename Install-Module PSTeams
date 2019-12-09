@@ -1,0 +1,6 @@
+# PSTeams is a PowerShell Module working on Windows / Linux and Mac. It allows to send notifications to Microsoft Teams. It's pretty flexible and provides a bunch of options.
+# Learn more: https://github.com/EvotecIT/PSTeams
+
+Install-Module PSTeams
+#Install-Module PSTeams -Scope CurrentUser
+#Update-Module PSTeams
