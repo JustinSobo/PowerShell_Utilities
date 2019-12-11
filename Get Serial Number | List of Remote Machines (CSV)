@@ -1,3 +1,5 @@
+# Use the below powershell script to to find serial number for multiple remote computers from csv file. First create the csv file computers.csv which includes the column ComputerName in the csv file. You will get the ComputerName and SerialNumber list in the csv file SerialNumbers.csv.
+
 Import-Csv C:\computers.csv | ForEach-Object{
 $ser_number = (Get-WMIObject Win32_Bios -ComputerName $_.ComputerName).SerialNumber
 if(!$ser_number){
