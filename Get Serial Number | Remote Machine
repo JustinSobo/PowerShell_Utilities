@@ -1,0 +1,1 @@
+Get-WMIObject Win32_Bios -ComputerName 'remote-svr1' | Select-Object SerialNumber
