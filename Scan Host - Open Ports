@@ -1,0 +1,5 @@
+Install-Module -Name PSnmap
+
+nmap HOSTNAME
+
+
