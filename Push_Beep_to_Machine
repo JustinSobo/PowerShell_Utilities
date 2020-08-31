@@ -1,0 +1,9 @@
+# Helpful when trying to locate a machine on a corporate floor.
+# Beep is typically not very loud. Relies on small attached motherboard speaker. 
+
+$i = 1
+while ($i = 1){
+    [console]::beep(2500,150)
+    [console]::beep(2500,150)
+    Start-Sleep -s 2
+}
