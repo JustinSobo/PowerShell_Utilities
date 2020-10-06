@@ -14,3 +14,10 @@ Read-Host -Prompt 'Directory created in destination. Press Enter to continue.'
 Copy-Item -Path $path -Destination $destination
 
 Read-Host -Prompt 'Taskbar shortcuts copied. Press Enter to exit.'
+
+
+-------------------------------------------------------
+
+$username = read-host -Prompt 'Enter Username'
+$path = 'C:\Users\'+$username+'\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\*'
+$destination = 'C:\Users\'+$username+'.MGA'+'\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\'
