@@ -1,0 +1,2 @@
+# Returns Windows 10 Time Settings from the registry.
+Get-Item -Path 'Registry::HKEY_CURRENT_USER\Control Panel\International'
