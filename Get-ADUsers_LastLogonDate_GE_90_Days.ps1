@@ -1,4 +1,4 @@
-# This code is sterile, and contains no company data.
+# This code is sterile, and contains no company data. Yet.
 # Setting up initial variables.
 $currentDate = Get-Date
 $pastDate = $currentDate.AddDays(-90)
